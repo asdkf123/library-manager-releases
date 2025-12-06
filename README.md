@@ -1,4 +1,4 @@
-# Library Manager
+# Library Manager (Manlist)
 
 <p align="center">
   <img src="assets/icon.png" width="128" height="128" alt="Library Manager Icon">
@@ -10,7 +10,7 @@
 
 # 한국어
 
-**만화 라이브러리 관리 도구** - 폴더명 기반 자동 메타데이터 인식, 태그/평점 관리, 이미지 번역 기능을 제공하는 데스크톱 앱
+**만화/웹툰 라이브러리 관리 도구** - 폴더명 기반 자동 메타데이터 인식, 태그/평점 관리, 이미지 번역 기능을 제공하는 데스크톱 앱
 
 ## ✨ 주요 기능
 
@@ -73,7 +73,7 @@
 
 # English
 
-**Manga Library Manager** - Desktop app with automatic metadata detection from folder names, tag/rating management, and image translation
+**Manga/Webtoon Library Manager** - Desktop app with automatic metadata detection from folder names, tag/rating management, and image translation
 
 ## ✨ Features
 
