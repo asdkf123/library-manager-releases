@@ -66,7 +66,7 @@
 
 | 기능 | 무료 | Pro |
 |------|:----:|:---:|
-| 작품 수 제한 | 1,000개 | 무제한 |
+| 작품 수 제한 | 500개 | 무제한 |
 | 기기 수 | 1대 | 3대 |
 
 ---
@@ -129,7 +129,7 @@ Library Folder/
 
 | Feature | Free | Pro |
 |---------|:----:|:---:|
-| Item Limit | 1,000 | Unlimited |
+| Item Limit | 500 | Unlimited |
 | Devices | 1 | 3 |
 
 ---
