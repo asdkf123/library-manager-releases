@@ -1,0 +1,62 @@
+name: Discord Release Notification
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord Notification
+        uses: actions/github-script@v7
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_RELEASE_WEBHOOK }}
+        with:
+          script: |
+            const webhook = process.env.DISCORD_WEBHOOK;
+            if (!webhook) {
+              console.log('DISCORD_RELEASE_WEBHOOK secret not set');
+              return;
+            }
+            
+            const release = context.payload.release;
+            const isPrerelease = release.prerelease;
+            const tag = release.tag_name;
+            const title = release.name || tag;
+            const body = release.body || '릴리즈 노트가 없습니다.';
+            const url = release.html_url;
+            
+            // Truncate body if too long (Discord embed limit is 4096 chars)
+            const maxLength = 2000;
+            const truncatedBody = body.length > maxLength 
+              ? body.substring(0, maxLength) + '\n\n... [더 보기](' + url + ')'
+              : body;
+            
+            const embed = {
+              title: isPrerelease ? `🧪 ${title} (Pre-release)` : `🎉 ${title}`,
+              description: truncatedBody,
+              url: url,
+              color: isPrerelease ? 16776960 : 5814783, // Yellow for prerelease, Green for stable
+              footer: {
+                text: 'Library Manager'
+              },
+              timestamp: release.published_at
+            };
+            
+            const payload = {
+              username: 'Library Manager Bot',
+              embeds: [embed]
+            };
+            
+            const response = await fetch(webhook, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+            
+            if (!response.ok) {
+              throw new Error(`Discord webhook failed: ${response.status}`);
+            }
+            
+            console.log('Discord notification sent successfully!');
