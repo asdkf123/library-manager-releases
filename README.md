@@ -4,6 +4,9 @@
   <img src="assets/icon.png" width="128" height="128" alt="Library Manager Icon">
 </p>
 
+Welcome to my Discord Channel
+https://discord.gg/ruJQs7q9
+
 **[한국어](#한국어) | [English](#english)**
 
 ---
