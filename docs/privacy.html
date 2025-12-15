@@ -1,109 +1,286 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>개인정보 처리방침 - Library Manager</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.7;
-      color: #333;
-      background: #f8f9fa;
-      padding: 20px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    }
-    h1 {
-      font-size: 24px;
-      margin-bottom: 8px;
-      color: #1a1a1a;
-    }
-    .subtitle {
-      color: #666;
-      margin-bottom: 32px;
-      font-size: 14px;
-    }
-    h2 {
-      font-size: 18px;
-      margin: 28px 0 12px;
-      color: #1a1a1a;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 8px;
-    }
-    p, li {
-      color: #444;
-      margin-bottom: 12px;
-    }
-    ul {
-      margin-left: 20px;
-      margin-bottom: 16px;
-    }
-    .highlight {
-      background: #e8f4fd;
-      padding: 16px;
-      border-radius: 8px;
-      margin: 16px 0;
-      border-left: 4px solid #2196F3;
-    }
-    .contact {
-      background: #f5f5f5;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 32px;
-    }
-    .date {
-      color: #888;
-      font-size: 13px;
-      margin-top: 32px;
-      text-align: right;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Library Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0b;
+            --bg-secondary: #141416;
+            --bg-card: #1a1a1f;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --accent: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.15);
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .gradient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 600px;
+            background: radial-gradient(ellipse 80% 50% at 50% -20%, var(--accent-glow), transparent);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent), #8b5cf6);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(to right, #fff, #a1a1aa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 20px;
+            transition: border-color 0.2s;
+        }
+
+        .card:hover {
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .card-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--accent-glow);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 8px;
+        }
+
+        li {
+            color: var(--text-secondary);
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 16px;
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-top: 16px;
+        }
+
+        .highlight p {
+            margin: 0;
+            color: var(--text-primary);
+            font-size: 14px;
+        }
+
+        .highlight strong {
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            margin-top: 20px;
+        }
+
+        .date {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 16px 60px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .card {
+                padding: 24px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>개인정보 처리방침</h1>
-    <p class="subtitle">Privacy Policy - Library Manager</p>
+    <div class="gradient-bg"></div>
 
-    <h2>1. 수집하는 정보</h2>
-    <p>Library Manager(이하 "앱")는 서비스 개선을 위해 다음과 같은 정보를 수집합니다:</p>
-    <ul>
-      <li><strong>기기 식별자</strong>: 익명화된 기기 ID</li>
-      <li><strong>앱 사용 정보</strong>: 프로 버전 사용 여부, 관리 중인 항목 수</li>
-    </ul>
-    
-    <div class="highlight">
-      <strong>📌 중요:</strong> 이름, 이메일, 전화번호 등 개인을 직접 식별할 수 있는 정보는 수집하지 않습니다.
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">📚</div>
+                <span class="logo-text">Library Manager</span>
+            </div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">How we handle your information</p>
+        </header>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">📊</div>
+                <h2>Information We Collect</h2>
+            </div>
+            <p>To improve our service, we collect the following anonymous data:</p>
+            <ul>
+                <li><strong>Device Identifier</strong> — Anonymous device ID for analytics</li>
+                <li><strong>Usage Statistics</strong> — Pro version status, number of managed items</li>
+            </ul>
+            <div class="highlight">
+                <p>✨ <strong>We do NOT collect</strong> your name, email, phone number, or any personally identifiable
+                    information.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🎯</div>
+                <h2>How We Use Your Data</h2>
+            </div>
+            <p>Collected information is used solely for:</p>
+            <ul>
+                <li>App stability monitoring and bug fixes</li>
+                <li>Feature improvements based on usage patterns</li>
+                <li>Enhancing overall service quality</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🔒</div>
+                <h2>Data Security</h2>
+            </div>
+            <p>Your data is encrypted and stored securely. We never sell or share your information with third parties.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">📱</div>
+                <h2>Your Content</h2>
+            </div>
+            <p>All content managed within the app (comics, novels, etc.) and WebDAV connection credentials are stored
+                <strong>locally on your device only</strong>. This data is never transmitted to external servers.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">✉️</div>
+                <h2>Contact</h2>
+            </div>
+            <p>Questions about this policy? Reach out to us:</p>
+            <p><strong>Discord:</strong> <a href="https://asdkf123.github.io/library-manager-releases/d.html"
+                    style="color: var(--accent);">Library Manager Community</a></p>
+        </div>
+
+        <footer>
+            <p class="date">Last updated: December 15, 2024</p>
+        </footer>
     </div>
-
-    <h2>2. 정보 사용 목적</h2>
-    <p>수집된 정보는 다음 목적으로만 사용됩니다:</p>
-    <ul>
-      <li>앱 안정성 모니터링 및 버그 수정</li>
-      <li>사용 패턴 분석을 통한 기능 개선</li>
-      <li>서비스 품질 향상</li>
-    </ul>
-
-    <h2>3. 정보 저장 및 보안</h2>
-    <p>수집된 정보는 안전한 서버에 암호화되어 저장되며, 제3자에게 판매하거나 공유하지 않습니다.</p>
-
-    <h2>4. 사용자 데이터</h2>
-    <p>앱에서 관리하는 모든 콘텐츠(만화, 소설 등)와 WebDAV 연결 정보는 <strong>사용자 기기에만 저장</strong>되며, 외부 서버로 전송되지 않습니다.</p>
-
-    <h2>5. 문의</h2>
-    <div class="contact">
-      <p>개인정보 처리방침에 대한 문의사항이 있으시면 아래로 연락해 주세요:</p>
-      <p><strong>이메일:</strong> [이메일 주소]</p>
-    </div>
-
-    <p class="date">최종 업데이트: 2024년 12월 15일</p>
-  </div>
 </body>
+
 </html>
