@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Library Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #09090b;
+            color: #fafafa;
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 48px 24px 80px;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #27272a;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #71717a;
+            font-size: 14px;
+        }
+
+        section {
+            margin-bottom: 36px;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #e4e4e7;
+        }
+
+        p {
+            color: #a1a1aa;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .discord-card {
+            background: linear-gradient(135deg, #5865F2 0%, #4752C4 100%);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .discord-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .discord-card p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 16px;
+        }
+
+        .discord-btn {
+            display: inline-block;
+            background: #fff;
+            color: #5865F2;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .discord-btn:hover {
+            text-decoration: none;
+            background: #f0f0f0;
+        }
+
+        .contact-card {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 12px;
+        }
+
+        .contact-card h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fafafa;
+            margin-bottom: 8px;
+        }
+
+        .contact-card p {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        .step {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .step-num {
+            width: 28px;
+            height: 28px;
+            background: #6366f1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 15px;
+            font-weight: 500;
+            color: #e4e4e7;
+            margin-bottom: 4px;
+        }
+
+        .step-content p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h3 {
+            font-size: 15px;
+            font-weight: 500;
+            color: #e4e4e7;
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #27272a;
+            color: #52525b;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Support</h1>
+            <p class="subtitle">Library Manager</p>
+        </header>
+
+        <section>
+            <h2>Get Help</h2>
+            <div class="discord-card">
+                <h3>💬 Join Our Discord</h3>
+                <p>The fastest way to get help! Ask questions, share feedback, and connect with other users.</p>
+                <a href="https://discord.gg/vau8z3qk" class="discord-btn">Join Discord Server</a>
+            </div>
+            <div class="contact-card">
+                <h3>🐛 Bug Reports</h3>
+                <p>Found a bug? Report it on our <a href="https://github.com/asdkf123/library-manager-releases/issues">GitHub Issues</a> page.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Getting Started</h2>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                    <h3>Add Your Server</h3>
+                    <p>Go to Settings → Network → Add Server. Enter your WebDAV URL, username, and password.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                    <h3>Scan Your Library</h3>
+                    <p>Tap the refresh button to scan your server. The app will automatically detect manga, comics, and novels.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                    <h3>Start Reading</h3>
+                    <p>Tap any item to start reading. Swipe left/right to navigate pages. Your progress is saved automatically.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>What is WebDAV?</h3>
+                <p>WebDAV is a protocol that lets apps access files on a remote server. Most NAS devices (Synology, QNAP) support WebDAV.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why are some images not loading?</h3>
+                <p>Check your network connection and ensure the server is accessible. Try refreshing the library.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I restore my Pro license?</h3>
+                <p>Go to Settings → About → Upgrade, then enter your license key to restore your purchase.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I cancel my subscription?</h3>
+                <p>You can manage or cancel your subscription through Settings → Apple ID → Subscriptions on your device.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Library Manager © 2025</p>
+        </footer>
+    </div>
+</body>
+
+</html>
