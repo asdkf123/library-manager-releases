@@ -3,7 +3,7 @@
 **A desktop app to organize and manage your local manga/comic image folders**
 
 [![Download](https://img.shields.io/badge/Download-Latest-blue?style=for-the-badge)](https://github.com/asdkf123/library-manager-releases/releases/latest)
-[![Discord](https://img.shields.io/badge/Discord-Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/ruJQs7q9)
+[![Discord](https://img.shields.io/badge/Discord-Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/MbNWZNSVYR)
 [![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-lightgrey?style=for-the-badge)](#-download)
 
 ---
@@ -156,7 +156,7 @@ English, 한국어, 日本語, 中文(简体), 中文(繁體), Español, Deutsch
 
 ## 💬 Community
 
-[![Discord](https://img.shields.io/badge/Discord-Official%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/ruJQs7q9)
+[![Discord](https://img.shields.io/badge/Discord-Official%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/MbNWZNSVYR)
 
 Questions? Use the in-app "Contact" feature or join our Discord!
 
@@ -171,7 +171,7 @@ Questions? Use the in-app "Contact" feature or join our Discord!
 **로컬에 저장된 만화/이미지 폴더를 체계적으로 관리하는 데스크톱 앱**
 
 [![Download](https://img.shields.io/badge/다운로드-Latest-blue?style=for-the-badge)](https://github.com/asdkf123/library-manager-releases/releases/latest)
-[![Discord](https://img.shields.io/badge/Discord-커뮤니티-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/ruJQs7q9)
+[![Discord](https://img.shields.io/badge/Discord-커뮤니티-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/MbNWZNSVYR)
 
 ---
 
@@ -323,7 +323,7 @@ Questions? Use the in-app "Contact" feature or join our Discord!
 
 ## 💬 커뮤니티
 
-[![Discord](https://img.shields.io/badge/Discord-공식%20커뮤니티-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/ruJQs7q9)
+[![Discord](https://img.shields.io/badge/Discord-공식%20커뮤니티-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/MbNWZNSVYR)
 
 문의사항은 앱 내 "문의하기" 또는 디스코드로 연락주세요!
 
