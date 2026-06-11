@@ -1,6 +1,6 @@
 # 📚 Library Manager
 
-**The Ultimate Desktop App for Managing Your Local Manga, Webtoon, and Novel Collections — now with mobile web access and a fully redesigned interface.**
+**The all-in-one desktop library for your local media — manga, webtoon, novel, video, music, and photo, all in one place. On-device, private, and fast.**
 
 [![Download](https://img.shields.io/badge/Download-Latest-blue?style=for-the-badge)](https://github.com/asdkf123/library-manager-releases/releases/latest)
 [![Discord](https://img.shields.io/badge/Discord-Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/MbNWZNSVYR)
@@ -10,65 +10,68 @@
 
 ## ✨ Why Library Manager?
 
-If you have your own collection of manga, webtoons, or novels stored locally, this app is built for you. Drop your folders in, and Library Manager indexes everything: parses `[Author] Title` patterns, detects encodings, generates thumbnails, and gives you a clean reading experience across desktop and mobile — without uploading a single file to a server.
+Your media is scattered across folders — comics here, videos there, music somewhere else. Library Manager pulls it all into one library. Drop your folders in and it indexes everything: groups related files into series, parses `[Author] Title` patterns, reads inside archives, fills in metadata, and generates thumbnails. Clean reading and viewing across desktop and mobile — **without uploading a single file to a server.**
+
+> **Latest — v6.6.0:** a complete video library overhaul. Tens of thousands of videos open instantly, with a capture-date **calendar**, a location **map**, and a full **video viewer**.
 
 ---
 
-## 🎨 Brand-New Interface (v5.1)
+## 🗂️ One Library for Everything
 
-The entire app has been redesigned from the ground up.
-
-- **Unified design system**: Sidebar, titlebar, dashboard, library grid, and viewers all share a consistent look.
-- **Tuned for long sessions**: Carefully chosen colors and typography reduce eye strain during long reading sessions.
-- **Status bar with at-a-glance signals**: Update notifications, sync status, and remote access state all live in a quiet corner of the window.
-- **13 languages, fully translated**: Every screen, dialog, and tooltip in English, 한국어, 日本語, 中文(简体·繁體), Español, Deutsch, Français, Português, Русский, Bahasa Indonesia, Italiano, Tiếng Việt.
-
----
-
-## 📱 Mobile Web Access (Remote)
-
-Read your library from anywhere — your phone, tablet, or another computer — without leaving home.
-
-- **One-click remote tunnel**: Enable remote access from settings, get a personal `your-name.librarymanager.app` URL.
-- **Same library, mobile-optimized UI**: Browse series, jump straight into chapters, pick up reading where you left off.
-- **No port forwarding, no router setup**: Works behind any home network or carrier NAT.
-- **Stays on your machine**: Files are streamed from your PC on demand. Nothing is uploaded to the cloud.
+Manga, webtoon, novel, video, music, and photo — six media types on one screen, sorted by rating, tag, and author. Switch types from the title bar; everything stays organized the same way.
 
 ---
 
 ## ✨ Core Features
 
-### 📂 Universal Library Management
+### 📂 Manga, Webtoon & Novel
 
-- **Manga**: Folders **and** archive files (`.zip`, `.cbz`) — read directly from archives, no extraction needed.
-    - Auto-detects `[Author] Title` format from folder/file names.
-    - Bulk tag and rating editing.
-- **Webtoon**: `Series > Episode` folder structure with drag-and-drop episode reordering.
-- **Novel**: TXT, EPUB, and PDF.
-    - **Smart encoding detection** — never see broken text again. Korean (CP949), Japanese (Shift_JIS), Chinese, and Unicode are all handled automatically.
+- **Manga**: folders **and** archives (`.zip`, `.cbz`) — read straight from archives, no extraction needed. Auto-detects `[Author] Title` from folder and file names.
+- **Webtoon**: `Series > Episode` structure with drag-and-drop reordering.
+- **Novel**: TXT, EPUB, and PDF with **smart encoding detection** — Korean (CP949), Japanese (Shift_JIS), Chinese, and Unicode handled automatically, so you never see broken text again.
 
-### 🌏 Real-time AI Image Translation
+### 🎬 Video — Rebuilt for Scale
 
-- **Gemini (Google) & Papago (Naver)** integration — translate manga and webtoon pages while you read.
-- **Dual View** toggle: switch between original and translated versions instantly.
-- **Bring your own key**: free with the Gemini Free Tier. No middleman, no markup.
+- **Instant at any size**: even 50,000+ videos appear the moment you open the tab.
+- **Capture-date calendar**: your own videos and photos laid out by the day they were shot. Jump straight back to that day.
+- **Location map**: see where GPS-tagged videos and photos were taken.
+- **Video viewer**: markers, A-B repeat, and frame-by-frame stepping. Press **C** to capture the current scene as the series thumbnail.
+- **External subtitles**: auto-detects `.srt` / `.vtt` next to the video — toggle with the **V** key.
+- **Wide format support**: plays even old phone formats (`k3g`, `3g2`, `skm`, `qt`) that fail elsewhere.
+- **Duplicate scan**: finds even re-encoded copies so you can clean up.
 
-### 🎨 Modern Viewers
+### 🎵 Music & 📷 Photo
 
-- **Manga**: Two-page spread, continuous scroll, fit-to-width / fit-to-height. Streams from archives.
-- **Webtoon**: Optimized vertical scrolling for long-strip content.
-- **Novel**: Auto-bookmarks reading position. Customize fonts, line spacing, and themes.
+- **Music**: ID3 album and artist parsing, plus a **dock player** that keeps playing as you move between tabs.
+- **Photo**: organized by capture date and location, right alongside your videos.
 
-### 💾 Privacy-First Data Handling
+### 🤖 Auto-Organize & Tags
 
-- **One-click backup & restore**: Library metadata, reading progress, thumbnails, ratings, and settings — all in a single `.zip`.
-- **Local-only storage**: Everything lives on your machine in a SQLite database. No telemetry on your library contents, no cloud sync of files.
-- **Move freely**: Reformat your PC, switch machines, or share with another device — restore from backup and you're back where you left off.
+- **Auto-series**: related files are grouped into series automatically; you can also hand-pick scattered files and build a series yourself.
+- **Tags everywhere**: tag any title, filter by tag (match all / any), and apply to many at once.
 
-### 🔄 Smart Auto-Update
+### 🌏 Local AI Translation
 
-- **In-app update notifications** in the status bar — no intrusive popups.
-- **7-day offline grace period** for license verification: keep reading even when you're disconnected.
+- **On-device translation** of foreign-language comics: speech bubbles are detected automatically and the translation is overlaid in place.
+- **GPU-accelerated**, whole-page batch translation.
+- **100% offline** — no cloud upload. Your images never leave your device.
+
+### 📱 Mobile Web Access (Remote)
+
+Read your library from anywhere — phone, tablet, or another computer — without leaving home.
+
+- **One-click remote tunnel**: enable it in settings and get a personal `your-name.librarymanager.app` URL.
+- **No port forwarding, no router setup** — works behind home networks and carrier NAT.
+- **Stays on your machine**: files are streamed from your PC on demand. Nothing is uploaded to the cloud.
+
+### 💾 Privacy-First, with Backup & Restore
+
+- **Local-only storage**: everything lives on your machine in a SQLite database. No file cloud sync, no telemetry on your library contents.
+- **One-click backup & restore**: ratings, tags, cast, reading/watching progress, and settings in a single file. Reformat your PC or switch machines and restore exactly where you left off.
+
+### 🌐 13 Languages
+
+Every screen, dialog, viewer, and tooltip in English, 한국어, 日本語, 中文 (简体 / 繁體), Español, Deutsch, Français, Português, Русский, Bahasa Indonesia, Italiano, and Tiếng Việt.
 
 ---
 
@@ -76,10 +79,10 @@ Read your library from anywhere — your phone, tablet, or another computer — 
 
 | Feature | Free | Pro |
 | :--- | :---: | :---: |
-| **Total Items** (Manga + Webtoon + Novel) | Max 500 | **Unlimited** |
+| **Total items** (manga + webtoon + novel + video + music + photo) | Max 500 | **Unlimited** |
 | **Devices** | 1 | **Up to 3** |
-| **Mobile Web Remote Access** | ✓ | ✓ |
-| **AI Image Translation** | ✓ | ✓ |
+| **Mobile web remote access** | ✓ | ✓ |
+| **Local AI translation** | ✓ | ✓ |
 | **Support** | Community | **Direct from developer** |
 
 ---
@@ -91,6 +94,8 @@ Read your library from anywhere — your phone, tablet, or another computer — 
 | **Windows** | [Download .exe](https://github.com/asdkf123/library-manager-releases/releases/latest) | Windows 10 / 11 (x64) |
 | **macOS (Apple Silicon)** | [Download .dmg (M1/M2/M3)](https://github.com/asdkf123/library-manager-releases/releases/latest) | **Notarized** — runs without security warnings |
 | **macOS (Intel)** | [Download .dmg (Intel)](https://github.com/asdkf123/library-manager-releases/releases/latest) | **Notarized** — runs without security warnings |
+
+> Mobile is supported via the built-in web server (see **Mobile Web Access** above) — no separate install needed.
 
 ---
 
@@ -108,7 +113,7 @@ Questions, feedback, or feature requests? Use the in-app **Contact** form or joi
 
 # 📚 Library Manager (한국어)
 
-**로컬 만화, 웹툰, 소설을 위한 최고의 데스크톱 관리 도구 — 모바일 웹 접근과 완전히 새로워진 인터페이스까지.**
+**흩어진 내 미디어를 한 서재에 — 만화, 웹툰, 소설, 영상, 음악, 사진을 한곳에서. 내 PC 안에서, 빠르게.**
 
 [![Download](https://img.shields.io/badge/다운로드-최신버전-blue?style=for-the-badge)](https://github.com/asdkf123/library-manager-releases/releases/latest)
 [![Discord](https://img.shields.io/badge/Discord-공식커뮤니티-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/MbNWZNSVYR)
@@ -117,65 +122,68 @@ Questions, feedback, or feature requests? Use the in-app **Contact** form or joi
 
 ## ✨ Library Manager가 필요한 이유
 
-집에 만화·웹툰·소설을 모아두는 분들을 위한 앱입니다. 폴더만 던져 넣으면 `[작가] 제목` 패턴을 알아서 파싱하고, 인코딩을 감지하고, 썸네일을 생성합니다. 데스크톱과 모바일 어디서든 깨끗한 독서 경험을 제공하면서 **파일을 외부 서버에 단 한 장도 올리지 않습니다.**
+만화는 여기, 영상은 저기, 음악은 또 다른 곳에 — 미디어가 폴더마다 흩어져 있죠. Library Manager는 그걸 한 서재로 모읍니다. 폴더만 넣으면 알아서 정리합니다. 연관된 파일을 시리즈로 묶고, `[작가] 제목` 패턴을 파싱하고, 압축파일 내부까지 읽어 메타데이터를 채우고, 썸네일을 만듭니다. 데스크톱과 모바일 어디서든 깔끔하게 보면서 **파일을 외부 서버에 단 한 개도 올리지 않습니다.**
+
+> **최신 — v6.6.0:** 영상 라이브러리를 통째로 다시 빚었습니다. 수만 개 영상도 즉시 열리고, 촬영일로 보는 **캘린더**, 촬영 위치로 보는 **지도**, 본격적인 **영상 뷰어**가 생겼습니다.
 
 ---
 
-## 🎨 새로워진 인터페이스 (v5.1)
+## 🗂️ 모든 것을 한 서재에
 
-앱 전체를 완전히 새로 디자인했습니다.
-
-- **일관된 디자인 시스템**: 사이드바·타이틀바·대시보드·라이브러리 그리드·뷰어 모두 통일된 룩으로 정돈.
-- **장시간 사용에 최적화**: 색상과 타이포그래피를 신중히 다듬어 오래 봐도 눈이 덜 피로하도록.
-- **상태바 한눈에 보기**: 업데이트 알림, 동기화 상태, 원격 접속 상태가 창 모서리에 조용히 표시.
-- **13개 언어 완전 적용**: 영어, 한국어, 일본어, 중국어(간체·번체), 스페인어, 독일어, 프랑스어, 포르투갈어, 러시아어, 인도네시아어, 이탈리아어, 베트남어 — 모든 화면, 다이얼로그, 툴팁까지.
-
----
-
-## 📱 모바일 웹 접근 (원격 접속)
-
-집에 켜둔 라이브러리를 외부에서 휴대폰·태블릿·다른 컴퓨터로 그대로 읽을 수 있습니다.
-
-- **원클릭 원격 터널**: 설정에서 켜기만 하면 `내이름.librarymanager.app` 같은 개인 URL이 부여됩니다.
-- **모바일 최적화 UI**: 같은 라이브러리를 폰 화면에 맞춰 깔끔하게. 시리즈 탐색, 챕터 바로 진입, 마지막 읽던 위치 이어보기까지.
-- **포트포워딩·공유기 설정 불필요**: 가정용 인터넷이나 통신사 NAT 환경에서도 그대로 동작.
-- **데이터는 PC에 그대로**: 모든 파일은 PC에서 필요할 때만 스트리밍됩니다. 클라우드에 올라가지 않습니다.
+만화, 웹툰, 소설, 영상, 음악, 사진 — 여섯 가지 미디어를 한 화면에서, 별점과 태그와 작가로 정돈합니다. 타이틀바에서 종류를 전환해도 정리 방식은 똑같이 유지됩니다.
 
 ---
 
 ## ✨ 핵심 기능
 
-### 📂 만능 라이브러리 관리
+### 📂 만화, 웹툰, 소설
 
-- **만화**: 일반 폴더 **그리고** 압축 파일(`.zip`, `.cbz`) 모두 지원 — 압축을 풀 필요 없이 바로 읽기.
-    - `[작가] 제목` 형식의 폴더/파일을 자동 인식.
-    - 태그·별점 일괄 편집.
-- **웹툰**: `시리즈 > 에피소드` 폴더 구조에 특화. 드래그앤드롭으로 에피소드 순서 변경.
-- **소설**: TXT, EPUB, PDF 지원.
-    - **스마트 인코딩 감지** — 깨진 글자는 이제 그만. 한국어(CP949), 일본어(Shift_JIS), 중국어, 유니코드 모두 자동 처리.
+- **만화**: 일반 폴더 **그리고** 압축 파일(`.zip`, `.cbz`)까지 — 압축을 풀지 않고 바로 읽기. 폴더와 파일 이름의 `[작가] 제목` 형식을 자동 인식.
+- **웹툰**: `시리즈 > 에피소드` 구조에 특화, 드래그앤드롭으로 순서 변경.
+- **소설**: TXT, EPUB, PDF 지원에 **스마트 인코딩 감지** — 한국어(CP949), 일본어(Shift_JIS), 중국어, 유니코드를 자동 처리해 깨진 글자를 더는 보지 않습니다.
 
-### 🌏 AI 이미지 실시간 번역
+### 🎬 영상 — 규모에 맞게 재설계
 
-- **Gemini (구글) & Papago (네이버)** 연동 — 만화·웹툰 이미지를 읽는 도중 번역.
-- **듀얼 뷰**: 클릭 한 번으로 원본과 번역본을 토글.
-- **개인 API 키 사용**: Gemini 무료 티어로 비용 부담 없이. 중간 마진 없이 직접.
+- **수만 개도 즉시**: 5만 개가 넘는 영상도 탭을 열면 바로 보입니다.
+- **촬영일 캘린더**: 직접 찍은 영상과 사진을 찍은 날짜로 펼쳐 보고, 그날로 바로 거슬러 올라갑니다.
+- **위치 지도**: GPS가 담긴 영상과 사진이 어디서 찍혔는지 지도 위에서 확인.
+- **영상 뷰어**: 마커, 구간 반복(A-B), 1프레임 단위 이동. **C 키**로 현재 장면을 캡처해 시리즈 대표 썸네일로.
+- **외부 자막**: 영상 옆 `.srt` / `.vtt`를 자동 인식, **V 키**로 켜고 끄기.
+- **폭넓은 포맷**: 다른 곳에서 안 열리던 구형 휴대폰 형식(`k3g`, `3g2`, `skm`, `qt`)까지 재생.
+- **중복 검사**: 재인코딩된 사본까지 찾아내 깔끔하게 정리.
 
-### 🎨 빠르고 강력한 뷰어
+### 🎵 음악 / 📷 사진
 
-- **만화**: 두 쪽 보기, 연속 스크롤, 너비 맞춤 / 높이 맞춤. 압축 파일 직접 스트리밍.
-- **웹툰**: 긴 호흡의 웹툰을 위한 끊김 없는 세로 스크롤.
-- **소설**: 읽던 위치 자동 저장. 폰트·줄간격·테마 커스터마이징.
+- **음악**: ID3로 앨범과 아티스트를 정리하고, 탭을 옮겨도 끊기지 않는 **도크 플레이어**로 연속 재생.
+- **사진**: 촬영일과 위치 기준으로 영상과 나란히 정리.
 
-### 💾 프라이버시 우선 데이터 관리
+### 🤖 자동 정리 / 태그
 
-- **원클릭 백업·복구**: 라이브러리 목록, 읽기 기록, 썸네일, 별점, 설정까지 `.zip` 하나로 묶음.
-- **로컬 전용 저장**: 모든 데이터는 PC의 SQLite에. 라이브러리 내용에 대한 텔레메트리도 없고, 파일 클라우드 동기화도 없음.
-- **자유로운 이동**: PC를 포맷하든, 새 컴퓨터로 옮기든, 백업 파일 하나만 있으면 그대로 복원.
+- **자동 시리즈**: 연관된 파일을 자동으로 시리즈로 묶고, 흩어진 파일은 직접 골라 시리즈로 만들 수도 있습니다.
+- **어디서나 태그**: 작품마다 태그를 달고, 태그로 거르고(모두 포함 / 하나라도), 여러 작품에 한 번에 적용.
 
-### 🔄 스마트 자동 업데이트
+### 🌏 로컬 AI 번역
 
-- **상태바 업데이트 알림** — 작업 흐름을 끊는 팝업 없음.
-- **7일 오프라인 유예 기간**: 인터넷이 끊겨도 일정 기간 동안 그대로 사용 가능.
+- **기기 안에서** 외국어 만화를 번역합니다. 말풍선을 자동으로 감지해 그 자리에 번역을 덧씌웁니다.
+- **GPU 가속**으로 페이지 전체를 한 번에 번역.
+- **100% 오프라인** — 클라우드 업로드 없음. 이미지는 기기를 떠나지 않습니다.
+
+### 📱 모바일 웹 접근 (원격 접속)
+
+집에 켜둔 라이브러리를 외부에서 휴대폰, 태블릿, 다른 컴퓨터로 그대로 읽습니다.
+
+- **원클릭 원격 터널**: 설정에서 켜면 `내이름.librarymanager.app` 같은 개인 URL이 부여됩니다.
+- **포트포워딩과 공유기 설정 불필요** — 가정용 인터넷이나 통신사 NAT 환경에서도 그대로 동작.
+- **데이터는 PC에 그대로**: 모든 파일은 PC에서 필요할 때만 스트리밍됩니다. 클라우드에 올라가지 않습니다.
+
+### 💾 프라이버시 우선, 백업과 복원
+
+- **로컬 전용 저장**: 모든 데이터는 PC의 SQLite에 저장됩니다. 파일 클라우드 동기화도, 라이브러리 내용에 대한 텔레메트리도 없습니다.
+- **원클릭 백업과 복원**: 별점, 태그, 출연자, 읽기/보기 진행률, 설정을 한 파일로 묶습니다. PC를 포맷하거나 새 컴퓨터로 옮겨도 마지막 지점 그대로 복원합니다.
+
+### 🌐 13개 언어
+
+모든 화면, 다이얼로그, 뷰어, 툴팁을 영어, 한국어, 일본어, 중국어(간체 / 번체), 스페인어, 독일어, 프랑스어, 포르투갈어, 러시아어, 인도네시아어, 이탈리아어, 베트남어로 제공합니다.
 
 ---
 
@@ -183,10 +191,10 @@ Questions, feedback, or feature requests? Use the in-app **Contact** form or joi
 
 | 기능 | Free | Pro |
 | :--- | :---: | :---: |
-| **라이브러리 통합 제한** (만화 + 웹툰 + 소설) | 총 500개 | **무제한** |
+| **전체 작품 수** (만화 + 웹툰 + 소설 + 영상 + 음악 + 사진) | 총 500개 | **무제한** |
 | **기기 사용** | 1대 | **최대 3대** |
 | **모바일 웹 원격 접속** | ✓ | ✓ |
-| **AI 이미지 번역** | ✓ | ✓ |
+| **로컬 AI 번역** | ✓ | ✓ |
 | **기술 지원** | 커뮤니티 | **개발자 직접 지원** |
 
 ---
@@ -196,8 +204,10 @@ Questions, feedback, or feature requests? Use the in-app **Contact** form or joi
 | 플랫폼 | 다운로드 | 비고 |
 | :--- | :--- | :--- |
 | **Windows** | [다운로드 .exe](https://github.com/asdkf123/library-manager-releases/releases/latest) | Windows 10 / 11 (x64) |
-| **macOS (Apple Silicon)** | [다운로드 .dmg (M1/M2/M3)](https://github.com/asdkf123/library-manager-releases/releases/latest) | **Apple 공증 완료** — 보안 경고 없이 안전하게 실행 |
-| **macOS (Intel)** | [다운로드 .dmg (Intel)](https://github.com/asdkf123/library-manager-releases/releases/latest) | **Apple 공증 완료** — 보안 경고 없이 안전하게 실행 |
+| **macOS (Apple Silicon)** | [다운로드 .dmg (M1/M2/M3)](https://github.com/asdkf123/library-manager-releases/releases/latest) | **Apple 공증 완료** — 보안 경고 없이 실행 |
+| **macOS (Intel)** | [다운로드 .dmg (Intel)](https://github.com/asdkf123/library-manager-releases/releases/latest) | **Apple 공증 완료** — 보안 경고 없이 실행 |
+
+> 모바일은 내장 웹 서버로 지원합니다(위 **모바일 웹 접근** 참고). 별도 설치가 필요 없습니다.
 
 ---
 
