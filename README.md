@@ -12,7 +12,7 @@
 
 Your media is scattered across folders — comics here, videos there, music somewhere else. Library Manager pulls it all into one library. Drop your folders in and it indexes everything: groups related files into series, parses `[Author] Title` patterns, reads inside archives, fills in metadata, and generates thumbnails. Clean reading and viewing across desktop and mobile — **without uploading a single file to a server.**
 
-> **Latest — v6.6.0:** a complete video library overhaul. Tens of thousands of videos open instantly, with a capture-date **calendar**, a location **map**, and a full **video viewer**.
+> **Latest — v6.13.0:** **AI subtitle generation** — transcribe a video's speech on-device with **whisper** and translate it into your language, all locally (Pro). Plus a comprehensive right-click menu across the video tab and a background task queue.
 
 ---
 
@@ -37,6 +37,7 @@ Manga, webtoon, novel, video, music, and photo — six media types on one screen
 - **Location map**: see where GPS-tagged videos and photos were taken.
 - **Video viewer**: markers, A-B repeat, and frame-by-frame stepping. Press **C** to capture the current scene as the series thumbnail.
 - **External subtitles**: auto-detects `.srt` / `.vtt` next to the video — toggle with the **V** key.
+- **AI subtitles (Pro)**: no subtitle file? Transcribe the speech with on-device **whisper** and translate it into your language — all locally, nothing uploaded. A subtitle explorer lets you click any line to jump to that moment.
 - **Wide format support**: plays even old phone formats (`k3g`, `3g2`, `skm`, `qt`) that fail elsewhere.
 - **Duplicate scan**: finds even re-encoded copies so you can clean up.
 
@@ -83,6 +84,7 @@ Every screen, dialog, viewer, and tooltip in English, 한국어, 日本語, 中�
 | **Devices** | 1 | **Up to 3** |
 | **Mobile web remote access** | ✓ | ✓ |
 | **Local AI translation** | ✓ | ✓ |
+| **AI subtitle generation** | — | **✓** |
 | **Support** | Community | **Direct from developer** |
 
 ---
@@ -124,7 +126,7 @@ Questions, feedback, or feature requests? Use the in-app **Contact** form or joi
 
 만화는 여기, 영상은 저기, 음악은 또 다른 곳에 — 미디어가 폴더마다 흩어져 있죠. Library Manager는 그걸 한 서재로 모읍니다. 폴더만 넣으면 알아서 정리합니다. 연관된 파일을 시리즈로 묶고, `[작가] 제목` 패턴을 파싱하고, 압축파일 내부까지 읽어 메타데이터를 채우고, 썸네일을 만듭니다. 데스크톱과 모바일 어디서든 깔끔하게 보면서 **파일을 외부 서버에 단 한 개도 올리지 않습니다.**
 
-> **최신 — v6.6.0:** 영상 라이브러리를 통째로 다시 빚었습니다. 수만 개 영상도 즉시 열리고, 촬영일로 보는 **캘린더**, 촬영 위치로 보는 **지도**, 본격적인 **영상 뷰어**가 생겼습니다.
+> **최신 — v6.13.0:** **AI 자막 생성** — 영상의 음성을 **whisper**로 받아쓰고 원하는 언어로 번역까지, 전부 내 PC에서(Pro). 영상 탭 우클릭 메뉴 종합화와 백그라운드 작업 큐도 함께 들어왔습니다.
 
 ---
 
@@ -149,6 +151,7 @@ Questions, feedback, or feature requests? Use the in-app **Contact** form or joi
 - **위치 지도**: GPS가 담긴 영상과 사진이 어디서 찍혔는지 지도 위에서 확인.
 - **영상 뷰어**: 마커, 구간 반복(A-B), 1프레임 단위 이동. **C 키**로 현재 장면을 캡처해 시리즈 대표 썸네일로.
 - **외부 자막**: 영상 옆 `.srt` / `.vtt`를 자동 인식, **V 키**로 켜고 끄기.
+- **AI 자막 (Pro)**: 자막 파일이 없어도, 영상 음성을 **whisper**로 받아써 원하는 언어로 번역합니다 — 전부 내 PC에서, 업로드 없음. 자막 탐색기로 원하는 줄을 클릭하면 그 장면으로 바로 이동.
 - **폭넓은 포맷**: 다른 곳에서 안 열리던 구형 휴대폰 형식(`k3g`, `3g2`, `skm`, `qt`)까지 재생.
 - **중복 검사**: 재인코딩된 사본까지 찾아내 깔끔하게 정리.
 
@@ -195,6 +198,7 @@ Questions, feedback, or feature requests? Use the in-app **Contact** form or joi
 | **기기 사용** | 1대 | **최대 3대** |
 | **모바일 웹 원격 접속** | ✓ | ✓ |
 | **로컬 AI 번역** | ✓ | ✓ |
+| **AI 자막 생성** | — | **✓** |
 | **기술 지원** | 커뮤니티 | **개발자 직접 지원** |
 
 ---
